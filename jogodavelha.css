@@ -1,3 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+#board {
+  border: 2px solid #ff0000;
+  width: 420px;
+  height: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #ff0000;
+}
+
+.casinha {
+  width: 140px;
+  height: 140px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.casinha:hover {
+  background: #1a1a1a;
+  box-shadow: 0 0 10px #007bff;
+}
+
+.gray {
+  background: #2c2c2c;
+}
+
+#vencedor {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#resetButton {
+  display: block;
+  margin: 20px auto;
+  padding: 20px 40px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#resetButton:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 20px #ff0000;
+  transform: scale(1.05);
+}
 #board {
   border: thin solid red;
   width: 420px;
